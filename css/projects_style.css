@@ -24,6 +24,28 @@ li a:hover:not(.active) {
   background-color: rgb(159, 161, 165);
 }
 
+table {
+	padding-top: 7rem;
+	border-spacing: 1rem;
+}
+
+td {
+	width: 30%;
+	height: 35rem;
+	/*background-color: rgb(255, 228, 226);*/
+}
+
+td div {
+    width: 96%;
+    height: 50%;
+    padding: 2%;
+}
+
+td div img {
+    width: 100%;
+    max-height: 96%;
+}
+
 .active {
   background-color: rgb(159, 161, 165);
 }
@@ -44,7 +66,6 @@ li a:hover:not(.active) {
 
 #navigation li{
 	display: inline;
-	/*min-width: 120rem;*/
 	position: sticky;
 }
 
@@ -54,39 +75,5 @@ li a:hover:not(.active) {
 	width: 100%;
 	height: 100px;
 	background-color: rgb(255, 228, 226);
-}
-
-#photo img{
-	float: left;
-	margin: 150px 20px;
-	width: 20rem;
-	height: auto;
-	border-radius: 15px;
-}
-
-#bio{
-	width: 35rem;
-	height: auto;
-	float: right;
-	margin-top: 17rem;
-	margin-right: 9rem;
-	font-size: 1.1rem;
-	text-align: left;
-	color: white;
-}
-
-#recent-accomp ul{
-	list-style: none;
-}
-
-h2{
-	font-size: xx-large;
-	text-align: center;
-	margin-bottom: 1rem;
-	color: rgb(255, 228, 226);
-}
-
-h3{
-	color: rgb(255, 228, 226);
 }
 

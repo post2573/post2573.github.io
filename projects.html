@@ -1,9 +1,93 @@
 <!DOCTYPE html>
 <html>
 	<head>
-
+		<link rel="stylesheet" href="css/projects_style.css"/>
+		<link href="css/lightbox.css" rel="stylesheet">
+		
 	</head>
 	<body>
-		<p> Hello World! </p>
+		<div id="header">
+			<div id="name">
+				<h1> LUCY ROSE POST </h1>
+			</div>
+			<div id="navigation">
+				<ul>
+					<li><a href="file:///Users/lucypost/Desktop/OneDrive%20-%20University%20of%20St.%20Thomas/CISC375/webdev/Personal%20Website/index.html">HOME</a></li>
+					<li><a class="active" href="file:///Users/lucypost/Desktop/OneDrive%20-%20University%20of%20St.%20Thomas/CISC375/webdev/Personal%20Website/projects.html">PROJECTS</a></li>
+					<li><a href="file:///Users/lucypost/Desktop/OneDrive%20-%20University%20of%20St.%20Thomas/CISC375/webdev/Personal%20Website/resume.html">RESUMÉ</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="body-content">
+			<table>
+				<tr>
+					<td>
+						<div>
+							<a href="images/quorBoard.JPG" data-lightbox="quor" data-title="Research project with Dr. Scott Yilek based off the game Quoridor (original game pictured here)"><img src="images/quorBoard.JPG" alt="quor"/></a>
+							<a href="images/quor.JPG" data-lightbox="quor" data-title="Research project with Dr. Scott Yilek based off the game Quoridor (original game pictured here)"> </a>
+						</div>
+						<div class="table_title">
+							<h3>Quoridor</h3>
+							<p>Research project with Dr. Scott Yilek</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<img src="images/single_cycle_datapath.JPG" alt="datapath image"/>
+						</div>
+						<div class="table_title">
+							<h3>UST-3400 computer</h3>
+							<p>The UST-3400 is an 8-register, 32-bit computer</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<img src="images/cache.JPG" alt="cache flowchard"/>
+						</div>
+						<div class="table_title">
+							<h3>Cache Simulator</h3>
+							<p>Simulates the function of a cache in a machine</p>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div>
+							<img src="images/bank.JPG" alt="bank cartoon image"/>
+						</div>
+						<div class="table_title">
+							<h3>Bank Simulator</h3>
+							<p>Simulated a the function of a bank using a priority queue</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<img src="images/keypad.JPG" alt="keypad image"/>
+						</div>
+						<div class="table_title">
+							<h3>Keypad</h3>
+							<p>Simulated a calculator like keypad that displays what is typed in a GUI</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<img src="images/ticTacToe.JPG" alt="datapath image"/>
+						</div>
+						<div class="table_title">
+							<h3>Tic Tac Toe</h3>
+							<p>Simulates a game of Tic Tac Toe</p>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<script src="javascript/lightbox-plus-jquery.js"></script>
+		<script>
+		    lightbox.option({
+		      'resizeDuration': 200,
+		      'wrapAround': true,
+		      
+		    })
+		</script>
 	</body>
 </html>

@@ -2,8 +2,9 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="css/index_style.css"/>
+		<script type = "text/javascript" src = "javascript/homepage.js"></script>
 	</head>
-	<body>
+	<body onload = "populateList();">
 		<div id="header">
 			<div id="name">
 				<h1> LUCY ROSE POST </h1>
@@ -12,7 +13,7 @@
 				<ul>
 					<li><a class="active" href="index.html">HOME</a></li>
 					<li><a href="projects.html">PROJECTS</a></li>
-					<li><a href="resume.html">RESUMÉ</a></li>
+					<li><a href="resume.html">RESUME</a></li>
 				</ul>
 			</div>
 		</div>
@@ -25,8 +26,19 @@
 					<h2>Meet Lucy</h2>
 				</div>
 				<p>	&nbsp &nbsp &nbsp &nbsp Welcome to my personal website! My name is Lucy Post and I am currently a junior at the University of St. Thomas. I will be graduating in May 2020 with a Bachelor of Science degree in Computer Science and a Minor in Mathematics.  </p>
-				<p>&nbsp &nbsp &nbsp &nbsp After school, I want to be working in a full time position as a Software Developer.</p>
+				<p>&nbsp &nbsp &nbsp &nbsp After I graduate, I want to be working in a full time position as a Software Developer. Last summer, I worked as a software engineer intern at Thomson Reuters. For summer 2019, I will be returning to TR for another internship.</p>
 			</div>
+			<div id="recent-accomp">
+				<div id="title">
+					<h2>Recent Accomplishments</h2>
+					<h3>Professional</h3>
+				</div>
+				<ul id="prof" style = "list-style: none;"></ul>
+				<div id="title">
+					<h3>Classes</h3>
+				</div>
+				<ul id="class"></ul>
+			</div>	
 		</div>
 	</body>
 </html>
