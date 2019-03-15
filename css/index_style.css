@@ -90,9 +90,6 @@ li a:hover:not(.active) {
 	list-style: none;
 }
 
-#class{
-	float:center;
-}
 #lang{
 	float: right;
 }
