@@ -28,6 +28,10 @@ li a:hover:not(.active) {
   background-color: rgb(159, 161, 165);
 }
 
+#body-content{
+	width: 65rem;
+}
+
 #name h1{
 	margin-top: 0.7rem;
 	padding-bottom: 0.7rem;
@@ -45,7 +49,11 @@ li a:hover:not(.active) {
 #navigation li{
 	display: inline;
 	/*min-width: 120rem;*/
-	position: sticky;
+	position: relative;
+}
+
+#navigation{
+	min-width: 60rem;
 }
 
 
@@ -55,3 +63,48 @@ li a:hover:not(.active) {
 	height: 100px;
 	background-color: rgb(255, 228, 226);
 }
+
+#title{
+	float: center;
+	padding-top: 10rem;
+	padding-bottom: 1rem;
+}
+
+#body-content a{
+	text-decoration: none;
+	color:rgb(255, 228, 226);
+	font-weight:bold;
+}
+
+#contact-info {
+	padding-bottom: 1rem;
+}
+
+/*
+#education {
+	padding-top: 1rem;
+	float: left;
+	text-align: left;
+}
+
+#education-dates{
+	padding-top: 1rem;
+	float: right;
+	text-align:left;
+}
+*/
+
+.leftSide{
+	padding-top: 1rem;
+	float: left;
+	text-align: left;
+	max-width: 45%;
+	clear: both;
+}
+
+.rightSide {
+	padding-top: 1rem;
+	float: right;
+	text-align:left;
+}
+

@@ -28,6 +28,10 @@ li a:hover:not(.active) {
   background-color: rgb(159, 161, 165);
 }
 
+#body-content{
+	width: 75rem;
+}
+
 #name h1{
 	margin-top: 0.7rem;
 	padding-bottom: 0.7rem;
@@ -45,7 +49,12 @@ li a:hover:not(.active) {
 #navigation li{
 	display: inline;
 	/*min-width: 120rem;*/
-	position: sticky;
+	position: relative;
+	left: 68px;
+}
+
+#navigation{
+	min-width: 60rem;
 }
 
 
@@ -68,21 +77,33 @@ li a:hover:not(.active) {
 	width: 35rem;
 	height: auto;
 	float: right;
-	margin-top: 17rem;
+	margin-top: 15rem;
 	margin-right: 9rem;
 	font-size: 1.1rem;
 	text-align: left;
 	color: white;
+	text-align: justify;
+	
 }
 
 #recent-accomp ul{
 	list-style: none;
 }
 
+#lang{
+	float: right;
+}
+
+#translate{
+	width: 60px;
+	float:right;
+}
+
 h2{
 	font-size: xx-large;
 	text-align: center;
-	margin-bottom: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	color: rgb(255, 228, 226);
 }
 

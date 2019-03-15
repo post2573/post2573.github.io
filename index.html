@@ -4,16 +4,26 @@
 		<link rel="stylesheet" href="css/index_style.css"/>
 		<script type = "text/javascript" src = "javascript/homepage.js"></script>
 	</head>
-	<body onload = "populateList();">
+	<body onload = "Init();">
 		<div id="header">
 			<div id="name">
 				<h1> LUCY ROSE POST </h1>
 			</div>
+			<button id="translate">Translate</button>
+			<select id="lang">
+				<option value="en">English</option>
+				<option value="es">Spanish</option>
+				<option value="de">German</option>
+				<option value="ne">Nepali</option>
+				<option value="vi">Vietnamese</option>
+				<option value="it">Italian</option>
+				<option value="fr">French</option>
+			</select>	
 			<div id="navigation">
 				<ul>
-					<li><a class="active" href="index.html">HOME</a></li>
-					<li><a href="projects.html">PROJECTS</a></li>
-					<li><a href="resume.html">RESUME</a></li>
+					<li id=home><a class="active" href="index.html">HOME</a></li>
+					<li id=project><a href="projects.html">PROJECTS</a></li>
+					<li id=resume><a href="resume.html">RESUME</a></li>
 				</ul>
 			</div>
 		</div>
@@ -25,7 +35,7 @@
 				<div id="welcome">
 					<h2>Meet Lucy</h2>
 				</div>
-				<p>	&nbsp &nbsp &nbsp &nbsp Welcome to my personal website! My name is Lucy Post and I am currently a junior at the University of St. Thomas. I will be graduating in May 2020 with a Bachelor of Science degree in Computer Science and a Minor in Mathematics.  </p>
+				<p>	&nbsp &nbsp &nbsp &nbsp Welcome to my personal website! My name is Lucy Post and I am currently a junior at the University of St. Thomas. I will be graduating in May 2020 with a Bachelor of Science degree in Computer Science and a Minor in Mathematics. During my time at St. Thomas, I have most enjoyed my study abroad experiences. My freshman year I spent J-term in Italy for a theology course. This past spring, I had the chance to travel with the UST choir to Vietnam for a two week tour where we performed around the country. My last study abroad experience was this past J-term. I went to Nepal to learn about Hinduism and Buddhism. It was an eye-opening experience.</p>
 				<p>&nbsp &nbsp &nbsp &nbsp After I graduate, I want to be working in a full time position as a Software Developer. Last summer, I worked as a software engineer intern at Thomson Reuters. For summer 2019, I will be returning to TR for another internship.</p>
 			</div>
 			<div id="recent-accomp">

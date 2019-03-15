@@ -2,8 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="css/projects_style.css"/>
-		<link href="css/lightbox.css" rel="stylesheet">
-		
+		<script type = "text/javascript" src = "javascript/projects.js"></script>
 	</head>
 	<body>
 		<div id="header">
@@ -12,9 +11,9 @@
 			</div>
 			<div id="navigation">
 				<ul>
-					<li><a href="file:///Users/lucypost/Desktop/OneDrive%20-%20University%20of%20St.%20Thomas/CISC375/webdev/Personal%20Website/index.html">HOME</a></li>
-					<li><a class="active" href="file:///Users/lucypost/Desktop/OneDrive%20-%20University%20of%20St.%20Thomas/CISC375/webdev/Personal%20Website/projects.html">PROJECTS</a></li>
-					<li><a href="file:///Users/lucypost/Desktop/OneDrive%20-%20University%20of%20St.%20Thomas/CISC375/webdev/Personal%20Website/resume.html">RESUMÉ</a></li>
+					<li><a href="index.html">HOME</a></li>
+					<li><a class="active" href="projects.html">PROJECTS</a></li>
+					<li><a href="resume.html">RESUME</a></li>
 				</ul>
 			</div>
 		</div>
@@ -23,8 +22,7 @@
 				<tr>
 					<td>
 						<div>
-							<a href="images/quorBoard.JPG" data-lightbox="quor" data-title="Research project with Dr. Scott Yilek based off the game Quoridor (original game pictured here)"><img src="images/quorBoard.JPG" alt="quor"/></a>
-							<a href="images/quor.JPG" data-lightbox="quor" data-title="Research project with Dr. Scott Yilek based off the game Quoridor (original game pictured here)"> </a>
+							<img id="img1" onclick="imageDisplay(1)" src="images/quorBoard.JPG" alt = "Quoridor: Research project with Dr. Scott Yilek"/>
 						</div>
 						<div class="table_title">
 							<h3>Quoridor</h3>
@@ -33,16 +31,16 @@
 					</td>
 					<td>
 						<div>
-							<img src="images/single_cycle_datapath.JPG" alt="datapath image"/>
+							<img id="img2" onclick="imageDisplay(2)" src="images/single_cycle_datapath.JPG" alt="UST-3400 Computer: The UST-3400 is an 8-register, 32-bit computer"/>
 						</div>
 						<div class="table_title">
-							<h3>UST-3400 computer</h3>
+							<h3>UST-3400 Computer</h3>
 							<p>The UST-3400 is an 8-register, 32-bit computer</p>
 						</div>
 					</td>
 					<td>
 						<div>
-							<img src="images/cache.JPG" alt="cache flowchard"/>
+							<img id="img3" onclick="imageDisplay(3)" src="images/cache.JPG" alt="Cache Simulator: Simulates the function of a cache in a machine"/>
 						</div>
 						<div class="table_title">
 							<h3>Cache Simulator</h3>
@@ -53,7 +51,7 @@
 				<tr>
 					<td>
 						<div>
-							<img src="images/bank.JPG" alt="bank cartoon image"/>
+							<img id="img4" onclick="imageDisplay(4)" src="images/bank.JPG" alt="Bank Simulator: Simulated a the function of a bank using a priority queue"/>
 						</div>
 						<div class="table_title">
 							<h3>Bank Simulator</h3>
@@ -62,7 +60,7 @@
 					</td>
 					<td>
 						<div>
-							<img src="images/keypad.JPG" alt="keypad image"/>
+							<img id="img5" onclick="imageDisplay(5)" src="images/keypad.JPG" alt="Keypad: Simulated a calculator like keypad that displays what is typed in a GUI"/>
 						</div>
 						<div class="table_title">
 							<h3>Keypad</h3>
@@ -71,7 +69,7 @@
 					</td>
 					<td>
 						<div>
-							<img src="images/ticTacToe.JPG" alt="datapath image"/>
+							<img id="img6" onclick="imageDisplay(6)" src="images/ticTacToe.JPG" alt="Tic Tac Toe: Simulates a game of Tic Tac Toe"/>
 						</div>
 						<div class="table_title">
 							<h3>Tic Tac Toe</h3>
@@ -80,14 +78,12 @@
 					</td>
 				</tr>
 			</table>
-		</div>
-		<script src="javascript/lightbox-plus-jquery.js"></script>
-		<script>
-		    lightbox.option({
-		      'resizeDuration': 200,
-		      'wrapAround': true,
-		      
-		    })
-		</script>
+			<div id="galWindow">
+				<div id="galContent">
+					<span style="cursor: pointer;" id="close" onclick="closeWindow()" >&times;</span>
+					<img id="slide-image">
+					<div id="caption"></div>
+				</div>
+			</div>
 	</body>
 </html>
